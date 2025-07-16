@@ -11,6 +11,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var navMenu = document.getElementById('navMenu');
+  navMenu.classList.toggle('show');
+});
+</script>
 	<body class="is-preload">
 <header id="nav-header">
   <nav id="nav">
@@ -101,13 +107,8 @@
 }
 </style>
 
-<!-- Add the following script before </body> -->
-<script>
-document.getElementById('navToggle').addEventListener('click', function() {
-  var navMenu = document.getElementById('navMenu');
-  navMenu.classList.toggle('show');
-});
-</script>
+
+
 		<!-- Header -->
 			<section id="header">
 				<header class="major">
