@@ -2608,7 +2608,7 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(144, 144, 144, 0.15);
-			color: #77966e !important;
+			color: #61755b !important;
 		}
 
 		input[type="submit"].icon,
@@ -2624,7 +2624,7 @@ input, select, textarea {
 			input[type="button"].icon:before,
 			button.icon:before,
 			.button.icon:before {
-				color: #77966e;
+				color: #61755b;
 				margin-right: 0.5em;
 			}
 
@@ -2668,7 +2668,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #77966e;
+				background-color: #61755b;
 			}
 
 			input[type="submit"].primary:active,
@@ -2676,7 +2676,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #77966e;
+				background-color: #61755b;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -2684,7 +2684,7 @@ input, select, textarea {
 			input[type="button"].primary.icon:before,
 			button.primary.icon:before,
 			.button.primary.icon:before {
-				color: #77966e;
+				color: #61755b;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2696,7 +2696,7 @@ input, select, textarea {
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
-			background-color: #77966e !important;
+			background-color: #61755b !important;
 			box-shadow: none !important;
 			color: #fff !important;
 			cursor: default;
