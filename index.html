@@ -12,7 +12,104 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+<!-- Add this just below <body class="is-preload"> -->
+<header id="nav-header">
+  <nav id="nav">
+    <div class="nav-container">
+      <div class="nav-toggle" id="navToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a>
+          <ul class="submenu">
+            <li><a href="#consulting">Consulting</a></li>
+            <li><a href="#permits">Permits</a></li>
+            <li><a href="#staffing">Staffing</a></li>
+          </ul>
+        </li>
+        <li><a href="https://calendly.com/deanalbergo1/30min" target="_blank">Book</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
+<!-- Add the following CSS to your main.css file -->
+<style>
+#nav-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-toggle {
+  width: 40px;
+  height: 40px;
+  background: #77966e;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: #77966e;
+  padding: 15px;
+  border-radius: 6px;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-bottom: 10px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu .submenu {
+  list-style: none;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.nav-menu .submenu li {
+  margin-bottom: 5px;
+}
+
+.nav-menu.show {
+  display: block;
+}
+</style>
+
+<!-- Add the following script before </body> -->
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var navMenu = document.getElementById('navMenu');
+  navMenu.classList.toggle('show');
+});
+</script>
 		<!-- Header -->
 			<section id="header">
 				<header class="major">
